@@ -3,9 +3,9 @@ kind: WebComponent
 metadata:
   name: ros-project-content
 spec:
-  microFrontend: ros-project
+  microFrontend: wac-hospital
   element: ros-project-list
   displayRules:
     - allOf:
       - context-name: main-content
-      - path: "^(\\.?/)?ros-project(/.*)?$"
+      - path: "^(\\.?/)?wac-hospital(/.*)?$"

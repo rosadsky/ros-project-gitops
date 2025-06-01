@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
   name: ros-project
-  namespace: ros-project
+  namespace: wac-hospital
 spec:
   imageRepositoryRef:
     name: ros-project # referuje ImageRepository z predchádzajúceho kroku

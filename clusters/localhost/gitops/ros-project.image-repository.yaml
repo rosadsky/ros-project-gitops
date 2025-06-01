@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: ros-project
-  namespace: ros-project
+  namespace: wac-hospital
 spec:
   image: rosadsky/ros-project
   interval: 1m0s

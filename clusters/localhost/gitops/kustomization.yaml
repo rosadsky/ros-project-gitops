@@ -5,7 +5,7 @@ labels:
 - pairs:
     app.kubernetes.io/part-of: ros-project
 
-namespace: ros-project
+namespace: wac-hospital
 
 resources:
 - prepare.kustomization.yaml

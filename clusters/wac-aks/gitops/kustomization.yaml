@@ -3,10 +3,10 @@ kind: Kustomization
 
 labels:
 - pairs:
-    app.kubernetes.io/part-of: ros-project
-    app.kubernetes.io/name: ros-project
+    app.kubernetes.io/part-of: wac-hospital
+    app.kubernetes.io/name: wac-hospital
 
-namespace: ros-project
+namespace: wac-hospital
 
 resources:
 - cd.kustomization.yaml
