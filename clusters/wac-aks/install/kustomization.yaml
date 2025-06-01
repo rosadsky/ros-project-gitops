@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: ros-project
+
+labels:
+- pairs:
+    app.kubernetes.io/part-of: ros-project
+    app.kubernetes.io/name: ros-project
+  includeSelectors: true
+  includeTemplates: true
+
+resources:
+- ../../../apps/ros-project
+
+
+components:
+- ../../../components/version-release

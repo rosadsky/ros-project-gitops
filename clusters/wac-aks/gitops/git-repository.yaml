@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: ros-project-gitops # v spoločnom klastri je nasadených viacero takýchto objektov
+  namespace: ros-project
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  timeout: 1m0s
+  url: https://github.com/rosadsky/ros-project-gitops
+
+# ak používate privátny repozitár nezabudnite doplniť autentifikačné údaje
+# secretRef:
+#    name: <pfx>-repository-pat
