@@ -1,0 +1,8 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: MicroFrontend
+metadata:
+  name: ros-project
+spec:
+  frontendClass: md-shell # default obsiahnutý v základe polyfea md-shell
+  service: http://ros-project.ros-project # referencia na službu odkiaľ sa má načítať modul
+  modulePath: build/ros-project.esm.js # cesta v rámci služby kde sa modul nachádza
