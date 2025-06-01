@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: ros-project
+  namespace: ros-project
+spec:
+  image: rosadsky/ros-project
+  interval: 1m0s
