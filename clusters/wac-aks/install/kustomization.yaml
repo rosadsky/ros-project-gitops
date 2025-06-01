@@ -4,15 +4,14 @@ kind: Kustomization
 namespace: wac-hospital
 
 labels:
-- pairs:
-    app.kubernetes.io/part-of: wac-hospital
-    app.kubernetes.io/name: wac-hospital
-  includeSelectors: true
-  includeTemplates: true
+  - pairs:
+      app.kubernetes.io/part-of: wac-hospital
+      app.kubernetes.io/name: ros-project
+    includeSelectors: true
+    includeTemplates: true
 
 resources:
-- ../../../apps/ros-project
-
+  - ../../../apps/ros-project
 
 components:
-- ../../../components/version-release
+  - ../../../components/version-release

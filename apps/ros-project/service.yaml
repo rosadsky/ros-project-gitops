@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: wac-hospital   #  určuje aj záznam DNS v rámci virtuálne siete klastra
+  name: ros-project   #  určuje aj záznam DNS v rámci virtuálne siete klastra
 spec:
   selector:
     pod: ros-project-label     # zhoduje sa s metadata.labels šablóny pod-u
