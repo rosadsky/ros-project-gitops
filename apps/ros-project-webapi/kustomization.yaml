@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- 'https://github.com/rosadsky/ros-project-webapi/deployments/kustomize/install'
+- http-route.yaml
+
+# patches:
+#   - path: patches/ros-project-webapi.deployment.yaml

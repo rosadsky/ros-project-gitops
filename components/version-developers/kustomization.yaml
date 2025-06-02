@@ -2,5 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1alpha1
 kind: Component
 images:
 - name: rosadsky/ros-project
-  newName: xosadsky/ambulance-ufe # {"$imagepolicy":  "wac-hospital:ambulance-ufe:name"}
-  newTag: main.20250415.1116 # {"$imagepolicy": "wac-hospital:ambulance-ufe:tag"}
+  newName: xosadsky/ros-project # {"$imagepolicy":  "wac-hospital:ros-project:name"}
+  newTag: main # {"$imagepolicy": "wac-hospital:ros-project:tag"}
+- name: rosadsky/ros-project-webapi
+  newName: rosadsky/ros-project-webapi # {"$imagepolicy":  "wac-hospital:ros-project-webapi:name"}
+  newTag: v1.1.0 # {"$imagepolicy": "wac-hospital:ros-project-webapi:tag"}

@@ -1,13 +1,15 @@
 apiVersion: polyfea.github.io/v1alpha1
 kind: WebComponent
 metadata:
-  name: ros-ambulance-ufe-content
+  name: ros-project-content
 spec:
-  microFrontend: ros-ambulance-ufe
-  element: ros-ambulance-wl-app
+  microFrontend: ros-project
+  element: hospital-dashboard
   attributes:
     - name: base-path
       value: /ros-project/
+    - name: api-base
+      value: /ros-project-api/
   displayRules:
     - allOf:
       - context-name: main-content

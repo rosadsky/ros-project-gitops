@@ -12,6 +12,7 @@ labels:
 
 resources:
   - ../../../apps/ros-project
+  - ../../../apps/ros-project-webapi
 
 components:
   - ../../../components/version-release

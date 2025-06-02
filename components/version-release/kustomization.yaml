@@ -3,4 +3,7 @@ kind: Component
 images:
 - name: rosadsky/ros-project
   newName: rosadsky/ros-project
-  newTag: 1.0.0  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú 
+  newTag: 1.0.0 
+- name: rosadsky/ros-project-webapi
+  newName: rosadsky/ros-project-webapi
+  newTag: 1.1.0
